@@ -1,0 +1,12 @@
+-- Extrait de /etc/snort/snort.lua — pas le fichier de configuration complet.
+-- Uniquement les blocs modifiés pour CodeAlpha Task 4 : HOME_NET et ips.
+
+HOME_NET = '192.168.1.0/24'
+
+ips =
+{
+    enable_builtin_rules = true,
+    include = '/etc/snort/rules/local.rules',
+
+    variables = default_variables
+}
